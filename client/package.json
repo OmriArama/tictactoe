@@ -1,0 +1,13 @@
+{
+  "name": "tictactoe-cli-client",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "CLI WebSocket client for TicTacToe",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
+
