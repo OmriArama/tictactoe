@@ -10,6 +10,15 @@ HOW TO RUN THE PROGRAM:
 
 Redis DB details remain in code for purpose so you can check easily, the DB will be deleted later on.
 
+
+Architecture:
+============
+
+This server uses both websocket, to notify the clients about changes instantly, but also uses Redis as a single source of truth.
+When the user connects to a server (with an game id) he will assigned into the game (if there is a place for him) and will be subbed to it.
+As mentioned the game current state is saved in redis, this helps us manage multiple server instances and let users that are connected to different servers play against each other, Everytime a user sends a move message we will save it to the state on Redis (after we verify that the message is from the correct play and is a legal move).
+
+
 AI USAGE:
 ============
 
