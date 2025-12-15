@@ -1,7 +1,6 @@
-An h1 header
+HOW TO RUN THE PROGRAM:
 ============
 
-HOW TO RUN THE PROGRAM:
 
 1. install dependencies
 2. open two clients/terminals
@@ -12,6 +11,7 @@ HOW TO RUN THE PROGRAM:
 Redis DB details remain in code for purpose so you can check easily, the DB will be deleted later on.
 
 AI USAGE:
+============
 
 I used AI in various ways:
 1. As an consultant on the various ways I can implement the solution, after talking I was convinced to use redis as my source of truth.
