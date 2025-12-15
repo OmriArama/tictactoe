@@ -101,12 +101,12 @@ const promptForMove = () => {
             rl.close();
             return;
         }
-        const idx = parseInputToIndex(answer);
-        if (idx === null || idx < 0 || idx > 8) {
+        const index = parseInputToIndex(answer);
+        if (index === null || index < 0 || index > 8) {
             console.log("Invalid input. Use \"row col\" (0-2) or a single index 0-8.");
             return promptForMove();
         }
-        sendMove(idx);
+        sendMove(index);
     });
 };
 
